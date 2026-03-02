@@ -3,13 +3,12 @@ package com.example;
 
 class Product {
 
-    // Atributos privados
+    
     private String id;
     private String name;
     private double price;
     private int stock;
 
-    // Constructor
     public Product(String id, String name, double price, int stock) {
         this.id = id;
         this.name = name;
@@ -17,7 +16,6 @@ class Product {
         setStock(stock);
     }
 
-    // Getters
     public String getId() {
         return id;
     }
@@ -34,7 +32,6 @@ class Product {
         return stock;
     }
 
-    // Setters con validación
     public void setId(String id) {
         this.id = id;
     }
@@ -55,7 +52,6 @@ class Product {
         }
     }
 
-    // Método toString
     @Override
     public String toString() {
         return "Producto [ID: " + id +
